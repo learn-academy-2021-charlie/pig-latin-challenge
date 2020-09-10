@@ -79,7 +79,7 @@ class App extends Component {
     // the render method is where we put information on the page
     // inside the return is all our JSX tags
     return (
-      <div>
+      <React.Fragment>
         <h1>Pig Latin Translator</h1>
           <div id="pigImage">
             <img
@@ -93,6 +93,7 @@ class App extends Component {
             <div className="info">
             {/* user input field - every DOM event that happens in the input will call the handleChange method and update state */}
               <input
+                type="text"
                 id="inputPhrase"
                 onChange={ this.handleChange }
                 value={ this.state.phrase }
@@ -106,10 +107,8 @@ class App extends Component {
             {/* where the translated phrase will display */}
             <p>{ this.state.phraseTranslated }</p>
           </div>
-        <footer>
-          Coded by ~your name here~
-        </footer>
-      </div>
+        <footer>Coded by ~your name here~</footer>
+      </React.Fragment>
     )
   }
 }
