@@ -12,25 +12,13 @@ In this activity we're going to create an application that translates regular En
 
 There are many [ examples ](http://funtranslations.com/pig-latin) of Pig Latin translators out there on the Internet to give you inspiration.
 
-### Mob Programming
-"All the brilliant minds working together on the same thing, at the same time, in the same space, and at the same computer," [ Mob Programming ](http://mobprogramming.org/)
-
-Mob programming is a scaled up version of pair programming. There is still a driver with their hands on the keyboard and a navigator that is directing the driver. The third person on the team can be researching as well as helping the navigator guide the driver. Everybody in the group contributes to the implementation.
-
-**Mob Programming Best Practices**
-* Change drivers every 30 minutes
-* Make sure everyone understands what's going on at all times
-* Take personal responsibility to stay engaged - ask questions, contribute ideas
-* Take breaks together
-* Help teammates stay engaged "Do you have any ideas.  Does that make sense to you?"
-
 ### Getting started
 All the code you'll need to write for this app is going to be inside one function in the `/src/App.js` file.
 
 After you accept the assignment from GitHub Classroom, you'll want to install all the necessary dependencies:
 
 ```bash
-$ cd Challenge-Pig-Latin-React
+$ cd pig-latin-challenge
 $ yarn
 ```
 
@@ -42,14 +30,11 @@ $ yarn start
 
 Now you're ready to code!
 
-To get started, find the `myPigLatinCodeHere` function, and write your code.  Every time you save your updated file, the browser window displaying your app will reload.
-
-
+To get started, find the `myPigLatinCodeHere` function, and write your code. Every time you save your updated file, the browser window displaying your app will reload.
 
 ### Pig Latin Challenge
 - Take the time to plan your approach.
 - This is a difficult logic problem to solve, brainstorm with your team and create a road map for your approach.
-
 
 **MVP - Minimum Viable Product**
 - As a user, I can type a series of English words into the Pig Latin application.
