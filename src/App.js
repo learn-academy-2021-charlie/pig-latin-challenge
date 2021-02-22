@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       // "phrase" is the text entered by the user - right now there are some test words hard coded to make the process of testing your code a bit faster and easier
       // ACTION ITEM: when you are ready for your full user experience, delete the test words so phrase is assigned an empty string
-      phrase: "echo through yummy squeal queen fry",
+      phrase: "alpha through yummy squeal queen fry",
       // "phraseTranslated" is what the user will see appear on the page as Pig Latin, it starts as the preset message and updates when your user clicks the "submit" button
       phraseTranslated: "This is where your translated sentence will appear."
     }
@@ -31,7 +31,7 @@ class App extends Component {
         return vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"
       })
       console.log("vowelsArray:", vowelsArray)
-      
+
       // your code here!
 
       // Remember: console.log is your friend :)
@@ -52,12 +52,11 @@ class App extends Component {
     this.setState({ phraseTranslated: translatedWords })
   }
 
-
   restartGame = () => {
     // this method restarts the game by setting the original state
     // ACTION ITEM: when you are ready for your full user experience, delete the test words in phrase so that is assigned an empty string
     this.setState({
-      phrase: "echo through yummy squeal queen fry",
+      phrase: "alpha through yummy squeal queen fry",
       phraseTranslated: "This is where your translated sentence will appear."
     })
   }
@@ -76,9 +75,8 @@ class App extends Component {
   }
 
   render() {
-    // inside the return is all our JSX tags
     return (
-      <React.Fragment>
+      <>
         <h1>Pig Latin Translator</h1>
         <img
           src="https://lh3.googleusercontent.com/QvvsRY5ShwDNEouVMK8_z7QCwS3grkgd4mzZOlom23Hurralk54ObvsyEMM8ZSNR5pEFBeBMzltzEEcgi2llYJnhXTuXClN3njmMjtw3vgn8Go5jr40fHMNzfI64eYRrnHbZUutxCA=w2400"
@@ -101,7 +99,7 @@ class App extends Component {
         </div>
         <p>{ this.state.phraseTranslated }</p>
         <footer>Coded by ~your name here~</footer>
-      </React.Fragment>
+      </>
     )
   }
 }
