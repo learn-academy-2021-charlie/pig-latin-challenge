@@ -50,7 +50,7 @@ class App extends Component {
 
     // the setState method will take your information from "translatedWords" and update the state object that is displayed to the user
     // no need to change this method
-    this.setState({ phraseTranslated: translatedWords })
+    this.setState({phraseTranslated: translatedWords})
   }
 
   restartGame = () => {
@@ -72,7 +72,7 @@ class App extends Component {
   // no need to modify this method
   handleInput = (e) => {
     // this method takes the input and saves the value in this.state.phrase so we can use the input in our program
-    this.setState({ phrase: e.target.value })
+    this.setState({phrase: e.target.value})
   }
 
   render() {
@@ -80,7 +80,7 @@ class App extends Component {
       <>
         <h1>Pig Latin Translator</h1>
         <img
-          src={ butcherPig }
+          src={butcherPig}
           alt="pig with butcher cut names in pig latin"
           className="butcherPig"
         />
@@ -90,15 +90,15 @@ class App extends Component {
           <input
             type="text"
             className="userInput"
-            onChange={ this.handleInput }
-            value={ this.state.phrase }
+            onChange={this.handleInput}
+            value={this.state.phrase}
           />
           <br />
           {/* button that called the setUpPreventDefault method which calls the myPigLatinCodeHere method */}
-          <button onClick={ this.setUpPreventDefault }>Submit</button>
-          <button onClick={ this.restartGame }>Clear</button>
+          <button onClick={this.setUpPreventDefault}>Submit</button>
+          <button onClick={this.restartGame}>Clear</button>
         </div>
-        <p>{ this.state.phraseTranslated }</p>
+        <p>{this.state.phraseTranslated}</p>
         <footer>Coded by ~your name here~</footer>
       </>
     )
