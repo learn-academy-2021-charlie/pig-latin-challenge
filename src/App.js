@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import butcherPig from './assets/butcherPig.jpeg'
 
-class App extends Component {
+class App extends Component{
   constructor(props){
     super(props)
     // the state object holds information that can be displayed to the user and updated throughout the program
@@ -75,8 +75,8 @@ class App extends Component {
     this.setState({phrase: e.target.value})
   }
 
-  render() {
-    return (
+  render(){
+    return(
       <>
         <h1>Pig Latin Translator</h1>
         <img
